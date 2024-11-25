@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'Iceberg': ['"Iceberg"'],
       },
+      screens: {
+        xs: '360px',
+      },
     },
   },
   plugins: [],

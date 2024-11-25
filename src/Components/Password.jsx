@@ -63,18 +63,18 @@ function Password()
                         <h1 className='font-Iceberg mb-5 pb-3 bg-gradient-to-t from-orange-500 to-yellow-400 bg-clip-text text-transparent text-l font-bold'>
                             Don't guess; generate. Security starts here.
                         </h1>
-                        <div>
+                        <div className='flex sm:flex-row xs:flex-col xs:items-center'>
                             <input 
                                 type="text"
                                 value={password}
                                 placeholder='password'
                                 readOnly 
                                 ref={passwordRef}
-                                className='p-2 px-2 text-center text-indigo-800 text-sm font-bold rounded-l-md'
+                                className='p-2 px-2 text-center text-indigo-800 text-sm font-bold rounded-md m-2 sm:rounded-r-none sm:m-0'
                             />
                             <button
                                 onClick={copyPasswordToClipboard}
-                                className='p-2 px-4 text-center bg-indigo-900 text-white text-sm font-bold rounded-r-md hover:bg-orange-600'
+                                className='p-2 px-4 w-3/4 text-center bg-indigo-900 text-white text-sm font-bold rounded-md hover:bg-orange-600 sm:rounded-l-none sm:w-1/4'
                             >COPY</button>
                         </div>
                         <div>
@@ -89,7 +89,7 @@ function Password()
                                 />
                                 <label className='p-2 text-white text-l font-bold '>Length : {length}</label>
                             </div>
-                            <div className='flex'>
+                            <div className='flex sm:flex-row xs:flex-col'>
                                 {/* to include the numbers in the password */}
                                 <div className='mx-2'>
                                     <input 
